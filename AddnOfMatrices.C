@@ -1,0 +1,141 @@
+/**********************
+ Problem statement: Write a program to implement addition of matrices
+Class: FY 
+Div.: M  
+Batch: M3
+Roll No.:55
+Name:Pankaj M Kamble
+************************/
+
+#include<stdio.h>
+int main()
+
+{
+
+  int r, c, matrix1[100][100], matrix2[100][100], sum[100][100], i, j;
+     printf("Enter the number of rows and columns : \n");
+     scanf("%d" "%d", &r, &c);
+     
+     printf("Input Matrix 1 elements : \n"); 
+
+     for(i=0; i<r; ++i)
+
+     for(j=0; j<c; ++j)
+
+{
+     
+     scanf("%d",&matrix1[i][j]);
+
+}
+    printf("\n Matrix 1 \n");
+
+
+    for(i=0;i<r;i++)
+{
+    
+    for(j=0;j<c;j++)
+
+{
+    
+    printf("%d" ,matrix1[i][j]);
+
+}
+
+    printf("\n");
+
+}
+
+    printf("Input Matrix 2 elements : \n");
+
+    for(i=0; i<r; ++i)
+
+    for(j=0; j<c; ++j)
+{
+
+    scanf("%d", &matrix2[i][j]);
+
+}
+    printf("\n Matrix 2 \n");
+ 
+    for(i=0;i<r;i++)
+
+{
+    
+    for(j=0;j<c;j++)
+
+{
+    
+    printf("%d",matrix1[i][j]);
+
+}
+    
+    printf("\n");
+
+}
+        // Adding Two matrices
+
+    printf(" \n Added Matrix\n ");
+
+    for(i=0;i<r;++i)
+
+    for(j=0;j<c;++j)
+{
+    
+    sum[i][j]=matrix1[i][j]+matrix2[i][j];
+
+}
+
+    // print the result
+
+   for(i=0;i<r;++i)
+   
+   for(j=0;j<c;++j)
+
+{
+
+   printf("%d ",sum[i][j]);
+
+   if(j==c-1)
+
+{
+
+   printf("\n");
+
+
+}
+
+}
+
+  return 0;
+
+}
+
+/**********************************
+ 
+ OUTPUT 
+
+
+Enter the number of rows and columns : 
+2
+2
+Input Matrix 1 elements : 
+1 4 
+4 
+1
+
+ Matrix 1
+14
+41
+Input Matrix 2 elements :
+2 6
+6 2
+
+ Matrix 2
+14
+41
+
+ Added Matrix
+ 3 10
+10 3
+
+/**********************************
